@@ -1,0 +1,31 @@
+main{
+    background-color:#0b2447 ;
+    height: 100vh;
+    margin: 0;
+}
+
+.boton {
+    border: 2px  solid #a5d7e8; 
+    padding: 10px; 
+    background-color: #576cbc; 
+    color: white; 
+    text-decoration: none; 
+    text-transform: uppercase; 
+    font-family: 'calibri', 'Gill Sans'; 
+    border-radius: 50px; 
+    margin-left: auto;
+}
+
+
+.tituloTour {
+    text-align: center;
+    color: white ;
+    box-shadow: white;
+    font-family: 'DynaPuff', cursive;
+    font-size: 25px;
+}
+.Fechas {
+    text-align: center;
+    color:white;
+    font-family: 'DynaPuff', cursive;
+}

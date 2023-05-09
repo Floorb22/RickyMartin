@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Prompt:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=DynaPuff&family=Prompt:wght@500;600&display=swap');
+
+/* Generales */
+:root {
+    --azul_oscuro: #0B2447;
+    --azul: #19376D;
+    --celeste_oscuro: #576CBC;
+    --celeste: #A5D7E8;
+}
+
+main {
+    height: 240vh;
+    background-color: var(--celeste);
+    margin: auto;
+}
+
+div.section {
+    margin-top: 1rem;
+}
+
+
+/* Album */
+#album {
+    height: 80vh;
+    background-image: url(../images/album.png);
+    background-size: cover;
+    font-family: 'calibri', 'Gill Sans'; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    padding-top: 0%;
+    margin-top: 0%;
+}
+
+/* Boton album*/
+.button-79 {
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -.01em;
+    color: var(--celeste);
+    text-decoration: none;
+}
+.boton_spotify img{
+    width: 20px;
+    height: 20px;
+}
+
+
+/* Tour */
+#tour {
+    height: 50vh;
+    background-color: var(--azul_oscuro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*Galeria tour*/
+#tour .galeria{
+    display: flex;
+    width: 930px;
+    height: 300px;
+}
+.galeria img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+.galeria img:hover{
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+/*Boton tour*/
+.button-23 {
+    background-color: rgba(255, 255, 255,0);
+    border: 1px solid var(--celeste);
+    border-radius: 8px;
+    color: var(--celeste);
+    cursor: pointer;
+    font-family: 'DynaPuff', cursive;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 13px 23px;
+}
+
+
+
+/* Merch */
+#merch {
+    height: 50vh;
+    background-color: var(--celeste);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*Imagenes merch*/
+.merch img{
+    width: 200px;
+    height: 170px;
+    filter: contrast(100%);
+    padding: 10px 20px;
+    border: 2px solid var(--azul);
+    border-radius: 100px;
+}
+
+/*Cajas merch*/
+.merch{
+    width: 32%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'calibri', 'Gill Sans'; 
+}
+
+/* Multimedia */
+#multimedia {
+    height: 50vh;
+    background-color: var(--azul_oscuro);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*Cajas multimedia*/
+.multimedia{
+    font-family: 'DynaPuff', cursive;
+    color: var(--celeste);
+    width: 32%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Imagenes multimedia*/
+.multimedia img{
+    width: 200px;
+    height: 200px;
+}
+
+/*Youtube multimedia*/
+.multimedia iframe{
+    margin-left: 1rem;
+}
+
+/*Cajas discos*/
+.discos{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.discos img{
+    width: 150px;
+    height: 150px;
+    opacity: .10;
+    transition: .3s;
+}
+
+.discos img:hover{
+    width: 200px;
+    height: 200px;
+    opacity: 1;
+    filter: contrast(120%);
+}

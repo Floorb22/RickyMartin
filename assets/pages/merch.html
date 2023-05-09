@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles/headerMerch.css" rel="stylesheet">
+    <link href="../styles/merch.css" rel="stylesheet">
+    <link href="../styles/footer.css" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet"> <!--Botones Footer -->
+    <title>Merch</title>
+</head>
+<body>
+    
+    <header>
+        <div class="logoContainer">
+            <div class="logo">
+                <img src="../images/spotify.rm.png" alt="logo de ricky martin">
+            </div>
+            <div class="titulo">
+                <a href="/index.html" style="color: white; text-decoration: none;" >
+                    <h1 style="font-family:'DynaPuff', cursive;">Ricky Martin</h1>
+                </a>
+            </div>
+        </div>
+        <div class="carritoContainer">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="icon-cart">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+            </svg>
+            <div class="container-carrito-productos carrito-oculto">
+                <div class="row-producto">
+                <div class="producto-carrito">
+                    <div class="info-producto-carrito">
+                        <span class="cantidadproducto-carrito"></span>
+                        <p class="tituloproducto-carrito"></p>
+                        <span class="precioproducto-carrito"></span>
+                    </div>
+                    <div class="cancelar-carrito">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="icon-close">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                </div>
+                </div>
+                <div class="total-carrito">
+                    <h3>Total:</h3>
+                    <span class="total-pagar">$0</span>
+                </div>
+        </div>
+        </div>
+        <div class="botonContainer">
+            <nav class="botonesNavegacion">
+                <a class="boton" href="./tour.html">Tour</a>
+                <a class="boton" href="./merch.html">Merch</a>
+                <a class="boton" href="./contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container-productos">
+            <div class="producto">
+                <figure>
+                    <img src="../images/buzo.jpg" alt="Buzo">
+                </figure>
+                <div class="info-producto">
+                    <h2>Buzo Ricky</h2>
+                    <p class="precio">$20000</p>
+                    <label for="select" class="seleccion-color">Color: </label>
+                    <select name="seleccion-color" id="seleccion-color">
+                        <option>Blanco</option>
+                        <option>Negro</option>
+                    </select>
+                    <button class="agregar">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="producto">
+                <figure>
+                    <img src="../images/remera.jpg" alt="Remera">
+                </figure>
+                <div class="info-producto">
+                    <h2>Remera Play</h2>
+                    <p class="precio">$10000</p>
+                    <label for="select" class="seleccion-color">Color: </label>
+                    <select name="seleccion-color" id="seleccion-color">
+                        <option>Blanco</option>
+                        <option>Negro</option>
+                    </select>
+                    <button class="agregar">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="producto">
+                <figure>
+                    <img src="../images/taza.jpg" alt="Taza">
+                </figure>
+                <div class="info-producto">
+                    <h2>Taza Play</h2>
+                    <p class="precio">$4000</p>
+                    <label for="select" class="seleccion-color">Color: </label>
+                    <select name="seleccion-color" id="seleccion-color">
+                        <option>Negro</option>
+                        <option>Azul</option>
+                    </select>
+                    <button class="agregar">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="producto">
+                <figure>
+                    <img src="../images/remera-ricky.jpg" alt="Remera-Ricky">
+                </figure>
+                <div class="info-producto">
+                    <h2>Remera Ricky</h2>
+                    <p class="precio">$12000</p>
+                    <label for="select" class="seleccion-color">Color: </label>
+                    <select name="seleccion-color" id="seleccion-color">
+                        <option>Negro</option>
+                        <option>Blanco</option>
+                        <option>Marron</option>
+                        <option>Gris</option>
+                    </select>
+                    <button class="agregar">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="producto">
+                <figure>
+                    <img src="../images/poster.jpg" alt="Poster">
+                </figure>
+                <div class="info-producto">
+                    <h2>Poster</h2>
+                    <p class="precio">$3000</p>
+                    <button class="agregar">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="producto">
+                <figure>
+                    <img src="../images/botella.jpg" alt="Botella">
+                </figure>
+                <div class="info-producto">
+                    <h2>Botella Ricky</h2>
+                    <p class="precio">$7000</p>
+                    <label for="select" class="seleccion-color">Color: </label>
+                    <select name="seleccion-color" id="seleccion-color">
+                        <option>Negro</option>
+                        <option>Rojo</option>
+                        <option>Verde</option>
+                    </select>
+                    <button class="agregar">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>¡Seguinos en nuestras redes!</p>
+        <div class="icon">
+            <a href="https://www.instagram.com/ricky_martin/?hl=es-la">
+                <svg heigth="80" width="80">
+                    <circle cx="40" cy="80" r=20 stroke="orange" stroke-width="4" fill="none"></circle>
+                </svg>
+                <i class="bx bxl-instagram"></i>
+            </a>
+        </div>
+        <div class="icon">
+            <a href="https://www.facebook.com/RickyMartinOfficialPage">
+                <svg heigth="80" width="80">
+                    <circle cx="40" cy="80" r=20 stroke="blue" stroke-width="4" fill="none"></circle>
+                </svg>
+                <i class="bx bxl-facebook"></i>
+            </a>
+        </div>
+        <div class="icon">
+            <a href="https://twitter.com/ricky_martin">
+                <svg heigth="80" width="80">
+                    <circle cx="40" cy="80" r=20 stroke="lightblue" stroke-width="4" fill="none"></circle>
+                </svg>
+                <i class="bx bxl-twitter"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="../scripts/carrito.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+/*Generales*/
+header {
+    display: flex;
+    background-color: #0b2447;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/*Botones de páginas*/
+.boton {
+    border: 2px solid #a5d7e8;
+    padding: 10px;
+    background-color: #576cbc;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'calibri', 'Gill Sans';
+    border-radius: 50px;
+    margin-left: auto;
+}
+
+/*Logo*/
+.logo img {
+    height: 60px;
+    align-items: center;
+    border-radius: 100px;
+
+}
+
+/*Div Logo*/
+.logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.titulo {
+    color: #ffffff;
+}
+
+.botonContainer {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.botonesNavegacion {
+    display: flex;
+    gap: 10px;
+
+}
+
+/*Div Carrito*/
+.carritoContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+/* Logo Carrito */
+.icon-cart {
+    width: 40px;
+    height: 40px;
+    color: white;
+    border-radius: 10px;
+    background-color: #a5d7e8;
+}
+
+.icon-cart:hover{
+    cursor: pointer;
+}
+
+.container-carrito-productos{
+    position: absolute;
+    background-color: #a5d7e8;
+    top: 130%;
+    left: -450%;
+    border-radius:2px;
+    width: 400px;
+    box-shadow: 0 10px 20px rgba(11, 36, 71, 0.20);
+}
+
+.carrito-oculto{
+    display: none;
+}
+
+.producto-carrito{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    border-bottom: 1px solid rgba(11, 36, 71, 0.20);
+}
+
+.info-producto-carrito{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;
+}
+
+.tituloproducto-carrito{
+    font-size: 20px;
+    font-family: 'DynaPuff', cursive;
+}
+
+.precioproducto-carrito{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+    font-family: 'calibri', 'Gill Sans'; 
+}
+
+.cantidadproducto-carrito{
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'calibri', 'Gill Sans'; 
+}
+
+.icon-close{
+    width: 25px;
+    height: 25px;
+}
+
+.icon-close:hover{
+    stroke: red;
+    cursor: pointer;
+}
+
+.total-carrito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.total-carrito h3{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'DynaPuff', cursive;
+}
+
+.total-pagar{
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'calibri', 'Gill Sans'; 
+} 
