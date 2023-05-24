@@ -40,38 +40,42 @@
     <main>
         <div class="contacto">
 
-        <form class="row g-3" method="POST" enctype="multipart/form-data">
+        <form class="row g-3" id="formulario">
             <div class="row g-3">
-                <div class="col-sm-6">
+                <div class="formulario_grupo col-sm-6" id="grupo_nombre">
                     <label for="firstName" class="form-label"><strong>Nombre</strong></label>
-                    <input type="text" class="form-control" name="nombre" id="firstName" placeholder="" value=""
-                        required="">
+                    <div class="formulario__grupo-input">
+                    <input type="text" class="form-control" name="nombre" id="firstName" placeholder="Juan" value="">
+                        <i class="formulario_validacion-estado fa-solid fa-circle-xmark" style="color: #f02424;"></i>
+                </div>
                     <div class="invalid-feedback">
-                        Por favor, ingrese un nombre válido.
+                        <b> Por favor, ingrese un nombre válido. </b>
                     </div>
                 </div>
 
-                <div class="col-sm-6">
+                <div class="formulario_grupo col-sm-6" id="grupo_apellido">
                     <label for="lastName" class="form-label"><strong>Apellido</strong></label>
-                    <input type="text" class="form-control" name="apellido" id="lastName" placeholder="" value=""
-                        required="">
+                    <input type="text" class="form-control" name="apellido" id="lastName" placeholder="Perez" value=""
+                        >
+                        <i class="formulario_validacion-estado fa-solid fa-circle-xmark" style="color: #f02424;"></i>
                     <div class="invalid-feedback">
-                        Por favor, ingrese un apellido válido.
+                       <b> Por favor, ingrese un apellido válido. </b>
                     </div>
                 </div>
 
 
-                <div class="col-12">
+                <div class="formulario_grupo col-12" id="grupo_email">
                     <label for="email" class="form-label"><strong>Email</strong></label>
-                    <input type="email" class="form-control" name="mail" id="email" placeholder="you@example.com">
+                    <input type="email" class="form-control" name="correo" id="correo" placeholder="you@example.com">
+                    <i class="formulario_validacion-estado fa-solid fa-circle-xmark" style="color: #f02424;"></i>
                     <div class="invalid-feedback">
-                        Por favor, ingrese un email válido.
+                        <b> Por favor, ingrese un email válido. </b>
                     </div>
                 </div>
 
                 <div class="col-md-5">
                     <label for="novedades" class="form-label"><strong>¿Desea recibir en su email todas las novedades?</strong></label>
-                    <select name="novedades" class="form-select" id="novedades" required="">
+                    <select name="novedades" class="form-select" required="">
                         <option value="">Selecione</option>
                         <option value="true">Si</option>
                         <option value="false">No</option>
@@ -80,7 +84,15 @@
 
 
             </div>
+
+            <div class="formulario_mensaje" id="formulario_mensaje">
+                <p><i class="fa-solid fa-circle-exclamation" style="color: #ff1a1a;"></i> <b>Error: </b> Por favor, rellena el formulario completo.</p>
+            </div>
+
+            <div class="formulario_enviar" id="formulario_enviar">
             <button class="w-100 btn btn-dark btn-lg " type="submit">SUSCRIBIRSE</button>
+            <p class="formulario_mensaje-exito" id="formulario_mensaje-exito"><b>Formulario enviado!</b></p>
+            </div>
         </form>
     </div>
     </main>
@@ -113,9 +125,12 @@
         </div>
     </footer>
 
+
+    <script src="../scripts/validacion_formulario.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5c022e6466.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
