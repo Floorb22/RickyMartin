@@ -63,7 +63,7 @@ carritoRow.addEventListener('click', e => {
         mostrarHTML()
     }
 
-})
+});
 
 
 

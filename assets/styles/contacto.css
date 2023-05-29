@@ -138,3 +138,12 @@ form{
     color: rgb(216, 4, 4);
 }
 
+
+/* Media Query */
+@media screen and (max-width:600px){
+    .container{ 
+    background-size: cover;
+    background-color: #A5D7E8;
+    height: 120vh;
+    }
+}

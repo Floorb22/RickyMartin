@@ -29,3 +29,12 @@ main{
     color:white;
     font-family: 'DynaPuff', cursive;
 }
+
+/*Media Query*/
+@media (max-width:480px){
+    .boton{
+        border: 2px  solid red; 
+        float:right;
+        display: flex;
+    }  
+}
