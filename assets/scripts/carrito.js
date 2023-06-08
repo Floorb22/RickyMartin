@@ -49,7 +49,7 @@ listaProductos.addEventListener('click', e => {
 });
 
 
-//Eliminar producto de lista de compras
+//Eliminar productos de lista de compras
 carritoRow.addEventListener('click', e => {
     if(e.target.classList.contains('icon-close')){
         const producto = e.target.parentElement;

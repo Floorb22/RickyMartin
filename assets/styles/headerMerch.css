@@ -6,7 +6,7 @@ header {
     background-color: #0b2447;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    height: 20vh;
 }
 
 /*Botones de páginas*/
@@ -149,3 +149,38 @@ header {
     font-weight: 900;
     font-family: 'calibri', 'Gill Sans'; 
 } 
+
+@media (max-width:490px){
+    .boton {
+        border: 1px  solid #a5d7e8; 
+        padding: 1px; 
+        background-color: #576cbc; 
+        color: #ffffff; 
+        text-decoration: none; 
+        text-transform: uppercase; 
+        font-family: 'calibri', 'Gill Sans'; 
+        border-radius: 10px; 
+        margin-left: auto;
+    }
+
+    .botonContainer {
+        display: flex;
+        align-items: center;
+        
+        
+    }
+    .botonesNavegacion {
+        display: flex;
+        gap: 5px;
+        
+    }
+
+    .carritoContainer {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        position: relative;
+    }
+
+    
+}

@@ -9,10 +9,13 @@
     --celeste: #A5D7E8;
 }
 
+body{
+    margin: 0%;
+}
+
 main {
     height: 240vh;
     background-color: var(--celeste);
-    margin: auto;
 }
 
 div.section {

@@ -1,40 +1,61 @@
-main{
-    background-color:#0b2447 ;
-    height: 100vh;
-    margin: 0;
+body{
+    margin:0%;
 }
 
-.boton {
+
+main{
+    background-color:#A5D7E8;
+    height: 140vh;
+    margin-top: -3%;
+}
+
+.boton1{
     border: 2px  solid #a5d7e8; 
     padding: 10px; 
     background-color: #576cbc; 
-    color: white; 
+    color: #0B2447; 
     text-decoration: none; 
     text-transform: uppercase; 
     font-family: 'calibri', 'Gill Sans'; 
     border-radius: 50px; 
-    margin-left: auto;
 }
 
 
 .tituloTour {
     text-align: center;
-    color: white ;
+    color: #0B2447;
     box-shadow: white;
     font-family: 'DynaPuff', cursive;
-    font-size: 25px;
+    font-size: 20px;
 }
 .Fechas {
     text-align: center;
-    color:white;
+    color:#0B2447;
     font-family: 'DynaPuff', cursive;
+    margin-top: 20px;
+}
+
+#map{
+    margin-top: 70px;
+    margin-left: 440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px; 
+    height: 250px;
 }
 
 /*Media Query*/
 @media (max-width:480px){
-    .boton{
-        border: 2px  solid red; 
-        float:right;
+
+    
+    #map{
+        margin-top: 25%;
+        margin-left: 10%;
         display: flex;
-    }  
+        align-items: center;
+        justify-content: center; 
+        width: 350px; 
+        height: 300px;
+    }
 }
