@@ -144,6 +144,12 @@ form{
 
 /* Media Query */
 @media screen and (max-width:600px){
+    
+    body{
+        background-image: url(../images/fondoformulario2.jpg);
+        background-size: cover;
+    }
+
     .container{ 
     background-size: cover;
     background-color: #A5D7E8;

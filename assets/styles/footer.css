@@ -23,8 +23,8 @@ footer {
 .icon i {
     color: white;
     position: absolute;
-    top: 50%;
-    left: 49%;
+    top: 53%;
+    left: 50%;
     transform: translate(-50%, -50%);
     font: size 1.7rem;
 }
@@ -36,4 +36,28 @@ svg circle {
 
 .icon:hover circle {
     stroke-dasharray: 250;
+}
+
+/* Media Query */
+@media screen and (max-width:600px){
+    footer {
+        height: 20vh;
+        background-color: #576cbc;
+        font-family: 'calibri', 'Gill Sans';
+        font-size: 20px;
+        color: #0B2447;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+     
+    .icon i {
+        color: white;
+        position: absolute;
+        top: 52%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font: size 1.7rem;
+    }
 }
