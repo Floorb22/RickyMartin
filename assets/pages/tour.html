@@ -13,53 +13,81 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />  
     <script src="http://maps.google.com/maps/api/js?key=AIzaSyDNCxdjSjGrxSCMWZN2rM0ZxFyZwjgjMVI" 
      src="/assets/scripts/logicaMapa.js"></script>
+     <script src="tourFechas.json"></script>
 </head>
 
 <body>
 
     <header>
-            <div class="logoContainer">
-                <div class="logo">
-                    <img src="../images/spotify.rm.png" alt="logo de ricky martin">
-                </div>
-                <div class="titulo">
+        <div class="logoContainer">
+            <div class="logo">
+                <img src="../images/spotify.rm.png" alt="logo de ricky martin">
+            </div>
+            <div class="titulo">
                 <a href="../../index.html" style="color: white; text-decoration: none;">
                     <h1 style="font-family:'DynaPuff', cursive;;">Ricky Martin</h1>
-                </div>
                 </a>
             </div>
-            <div class="botonContainer">
-                <nav class="botonesNavegacion">
-                    <a class="boton" href="./tour.html">Tour</a>
-                    <a class="boton" href="./merch.html">Merch</a>
-                    <a class="boton" href="./contacto.html">Contacto</a>
-                </nav>
-            </div>
+        </div>
+        <div class="botonContainer">
+            <nav class="botonesNavegacion">
+                <a class="boton" href="./tour.html">Tour</a>
+                <a class="boton" href="./merch.html">Merch</a>
+                <a class="boton" href="./contacto.html">Contacto</a>
+            </nav>
+        </div>
     </header>
 
     <main>
         <div class="tituloTour">
             <h1>Próximas fechas del Tour</h1>
         </div>
-        <div class="Fechas">
-            <p style="font-size: 25px; color:#576cbc;">CÓRDOBA<p>23 de Julio del 2023<a class="boton1" href="https://www.passline.com/home">COMPRAR</a></p></p>
-            <p>24 de Julio del 2023<a class="boton1" href="https://www.passline.com/home">COMPRAR</a></p>
-            <p style="font-size: 25px; color:#576cbc;">MENDOZA<p>27 de Julio del 2023<a class="boton1" href="https://www.passline.com/home">COMPRAR</a></p></p>
-            <p style="font-size: 25px; color:#576cbc;">MONTEVIDEO<p>01 de Agosto del 2023<a class="boton1" href="https://www.passline.com/home">COMPRAR</a></p></p>
-            <p style="font-size: 25px; color:#576cbc;">BUENOS AIRES<p>05 de Agosto del 2023<a class="boton1" href="https://www.passline.com/home">COMPRAR</a></p></p>
-            <p style="font-size: 25px; color:#576cbc;">ROSARIO<p>07 de Agosto del 2023<a class="boton1" href="https://www.passline.com/home">COMPRAR</a></p></p>
-        </div>
-        <div id="map"></div>    
+        <div class="Fechas" id="eventos-lista"></div>
+        <div id="map"></div>
     </main>
-    
-    
+
+    <script>
+        // Acceder a los datos del archivo JSON
+        fetch('tourFechas.json')
+            .then(response => response.json())
+            .then(data => {
+                const listaFechas = document.getElementById('eventos-lista');
+                data.forEach(evento => {
+                    const lugar = evento.lugar;
+                    const fecha = evento.fecha;
+
+                    const contenedorEvento = document.createElement('div');
+                    contenedorEvento.classList.add('evento');
+
+                    const lugarElemento = document.createElement('p');
+                    lugarElemento.classList.add('lugar');
+                    lugarElemento.textContent = lugar;
+
+                    const fechaElemento = document.createElement('p');
+                    fechaElemento.classList.add('fecha');
+                    fechaElemento.textContent = fecha;
+
+                    const botonElemento = document.createElement('a');
+                    botonElemento.classList.add('boton1');
+                    botonElemento.href = 'https://www.passline.com/home';
+                    botonElemento.textContent = 'COMPRAR';
+
+                    contenedorEvento.appendChild(lugarElemento);
+                    contenedorEvento.appendChild(fechaElemento);
+                    contenedorEvento.appendChild(botonElemento);
+
+                    listaFechas.appendChild(contenedorEvento);
+                });
+            });
+    </script>
+
     <script src="../scripts/logicaMapa.js"></script>
 
     <footer>
         <p>¡Seguinos en nuestras redes!</p>
         <div class="icon">
             <a href="https://www.instagram.com/ricky_martin/?hl=es-la">
-                <svg heigth="80" width="80">
+                <svg height="80" width="80">
                     <circle cx="40" cy="80" r=20 stroke="orange" stroke-width="4" fill="none"></circle>
                 </svg>
                 <i class="bx bxl-instagram"></i>
@@ -67,7 +95,7 @@
         </div>
         <div class="icon">
             <a href="https://www.facebook.com/RickyMartinOfficialPage">
-                <svg heigth="80" width="80">
+                <svg height="80" width="80">
                     <circle cx="40" cy="80" r=20 stroke="blue" stroke-width="4" fill="none"></circle>
                 </svg>
                 <i class="bx bxl-facebook"></i>
@@ -75,10 +103,10 @@
         </div>
         <div class="icon">
             <a href="https://twitter.com/ricky_martin">
-            <svg heigth="80" width="80">
-                <circle cx="40" cy="80" r=20 stroke="lightblue" stroke-width="4" fill="none"></circle>
-            </svg>
-            <i class="bx bxl-twitter"></i>
+                <svg height="80" width="80">
+                    <circle cx="40" cy="80" r=20 stroke="lightblue" stroke-width="4" fill="none"></circle>
+                </svg>
+                <i class="bx bxl-twitter"></i>
             </a>
         </div>
     </footer>
